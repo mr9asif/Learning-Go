@@ -11,8 +11,8 @@
 // ---------IMPORTANT-------
 // 1.If i create other func then i will give the folder name as a package name;
 // 2. But if there also contain the main func. then must be package name will be main;
-// 3. Go can't run any function without main func. means it will run throw main func. 
-
+// 3. Go can't run any function without main func. means it will run throw main func.
+// --------->
 // package main
 
 // import "fmt"
@@ -25,4 +25,15 @@
 // 	Myfun()
 // }
 
+// -------------->
+package main
+
+import "fmt"
+
+func main(){
+	var name string
+	fmt.Println("Enter your name:--")
+    fmt.Scanln(&name);
+	fmt.Println("your name is: ",name)
+}
 
