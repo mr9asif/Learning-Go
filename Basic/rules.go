@@ -7,6 +7,10 @@
 // 6. Capitalized names = exported (public)
 // 7. lowercase names = unexported (private)
 // 8. Library packages do NOT need main()
+// 9. For use a function on different file we need to import that but we can't because it's not    inbuild so we have to creat a "go mod init [name]" where it will create a module by that name.
+// and we can import it name/package
+
+// *** init() function execute before main() function
 
 // ---------IMPORTANT-------
 // 1.If i create other func then i will give the folder name as a package name;
@@ -26,14 +30,5 @@
 // }
 
 // -------------->
-package main
 
-import "fmt"
-
-func main(){
-	var name string
-	fmt.Println("Enter your name:--")
-    fmt.Scanln(&name);
-	fmt.Println("your name is: ",name)
-}
 
